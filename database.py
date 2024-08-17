@@ -2,9 +2,9 @@ from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 
-from decouple import config
+#from decouple import config
 
-POSTGRES_URL = config(POSTGRES_DETAILS)
+POSTGRES_URL = "postgresql://postgres:kazim1234@localhost:5432/patient"  #config('POSTGRES_DETAILS')
 
 SQLALCHEMY_DATABASE_URL = POSTGRES_URL
 
